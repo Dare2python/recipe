@@ -1,0 +1,64 @@
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <a href="#" class="navbar-brand">Recipe Book</a>
+
+  <!-- https://getbootstrap.com/docs/4.1/components/navbar/ -->
+  <!-- https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp -->
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" 
+    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+    aria-label="Toggle navigation"
+    ><span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a 
+          class="nav-link" 
+          routerLink="/"
+          routerLinkActive="active">
+          Home 
+          
+        </a>
+        <!-- <span class="sr-only">(current)</span> -->
+      </li>
+      <li class="nav-item">
+        <a 
+          class="nav-link" 
+          routerLink="/recipes"
+          routerLinkActive="active">Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" routerLink="#">Disabled</a>
+      </li>
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+      </li>
+    </ul>
+  </div>
+
+  <span class="navbar-text" style="padding-right: 10px;">
+      Navbar text with an inline element  
+  </span>
+
+  <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
