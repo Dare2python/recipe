@@ -19,9 +19,7 @@ export class RecipeService {
     ];
     getRecipe(id: number) {
         const recipe = this.recipes.find(
-            (r) => {
-                return r.id === id;
-            }
+            (r: Recipe) => r.id === id * 1
         );
         return recipe;
     }
